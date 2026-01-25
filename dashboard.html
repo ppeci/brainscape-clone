@@ -9,24 +9,37 @@
 <body>
     <div id="container">
     <!-- Top Section -->
-    <header id="top">
-        <div id="top-bar">
-<img id="logo" src="logo.png" alt="Logo">
-<h1>Knowledge Rehab</h1>
-<p>Brainscape Certified</p>
-<img id="icon" src="icon.png" alt="Icon">
-<p>cards Studied:<span id="cards-studied">0 of 1,226</span></p>
-<button id="study-button">Study</button>
-<a href="#">share</a>
-</div>
- <!-- classes and leaderboard selection bar -->
-  <div id="selection-bar">
-    <a href="#" id="about-link">About</a>
-    <a href="#" id="Deck-link">Decks</a>
-    <a href="#" id="leaderboard-link">Leaderboard</a>
-  </div>
-        
-</header>
+      <div class="top">
+    <header class="top-bar">
+      
+ <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+<div class="header-content">
+      <h1>Physics 101</h1>
+
+      <div class="meta">
+        <span class="certified">✔ Certified</span>
+        <span class="cards">1,314 cards studied</span>
+      </div>
+
+      <div class="actions">
+        <button class="primary">Study</button>
+        <button class="share-button">SHARE</button>
+        <button class="menu-button">...</button>
+      </div>
+    </div>
+
+    <!-- Mastery -->
+    <div class="mastery">
+      <div class="ring">
+        <span>92%</span>
+      </div>
+      <p>Mastery</p>
+    </div>
+    </header>
+ </div>
+
 
     <!-- Side Section -->
     <aside id="side">
@@ -97,6 +110,13 @@
 
  <!-- main Section -->
   <main id="main-content">
+    <!-- classes and leaderboard selection bar -->
+  <div id="selection-bar">
+    <a href="#" id="about-link">About</a>
+    <a href="#" id="Deck-link">Decks</a>
+    <a href="#" id="leaderboard-link">Leaderboard</a>
+  </div>
+        
 
     <div id="deck selection">
         <input type="radio" name="deck" value="all" checked>All 
