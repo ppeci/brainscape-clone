@@ -59,40 +59,14 @@ const previewImage = document.getElementById("aiPreview");
 
 features.forEach((feature) => {
   feature.addEventListener("mouseenter", () => {
-    
+    // remove active state
     features.forEach((f) => f.classList.remove("active"));
 
+    // add active to hovered
     feature.classList.add("active");
 
+    // swap image
     const newImage = feature.getAttribute("data-image");
     previewImage.src = newImage;
   });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const watchBtn = document.querySelector(".ai-btn");
-    const modal = document.getElementById("watchModal");
-    const closeBtn = document.querySelector(".close-modal");
-    const video = document.getElementById("watchVideo");
-
-    watchBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        modal.style.display = "flex";
-        video.src = "https://www.youtube.com/embed/dyCSv2d8spk?autoplay=1";
-    });
-
-    closeBtn.addEventListener("click", () => {
-        modal.style.display = "none";
-        video.src = "";
-    });
-
-    window.addEventListener("click", (e) => {
-        if (e.target === modal) {
-            modal.style.display = "none";
-            video.src = "";
-        }
-    });
-
 });

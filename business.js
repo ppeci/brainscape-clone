@@ -53,13 +53,14 @@ document.querySelectorAll(".mobile-menu a").forEach(link => {
     mobileMenu.classList.remove("active");
   });
 });
+
 /* AI feature image swap */
 const features = document.querySelectorAll(".ai-feature");
 const previewImage = document.getElementById("aiPreview");
 
 features.forEach((feature) => {
   feature.addEventListener("mouseenter", () => {
-    
+   
     features.forEach((f) => f.classList.remove("active"));
 
     feature.classList.add("active");
