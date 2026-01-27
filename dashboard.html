@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
 <body>
     <div id="container">
@@ -13,10 +16,10 @@
     <header class="top-bar">
       
  <div class="logo">
-      <img src="logo.png" alt="Logo">
+      <img src="icons/image.png" alt="Logo">
     </div>
 <div class="header-content">
-      <h1>Physics 101</h1>
+      <h1>Ω Knowledge Rehab Ω</h1>
 
       <div class="meta">
         <span class="certified">✔ Certified</span>
@@ -24,9 +27,9 @@
       </div>
 
       <div class="actions">
-        <button class="primary">Study</button>
+        <button class="primary">STUDY </button>
         <button class="share-button">SHARE</button>
-        <button class="menu-button">...</button>
+        <button class="menu-button"><a href="#"><i class="fa-solid fa-ellipsis" style="font-size: 22px;"></i></a></button>
       </div>
     </div>
 
@@ -43,71 +46,81 @@ Mastery</span></pre>
 
 
     <!-- Side Section -->
-    <aside id="side">
+    <aside class="sidebar">
+  <!-- HEADER -->
+  <header class="sidebar-header">
+    <!--<div class="top-bar">
+      <i class="fa-solid fa-hippo"></i>
+      <i class="fa-solid fa-gear"></i>
+    </div>-->
 
-        <div id="top-side">
-<img id="logo" src="logo.png" alt="Logo">
-<img id="profile" src="profile.png" alt="Profile Picture">
-<p id="username">Username</p>
-    
-    
-<p id="greeting">Good Afternoon, Username</p>
-<p id="streak">Days Streak:<span id="streak-count">0</span></p>
-<p id="studied-today">Studied Today:<span id="studied-today-count">0</span></p>
-<p id="avg-studied">Avg. Studied/Day: <span id="avg-studied-count">0</span></p>
-<img id="study-metrics" src="progress-chart.png" alt="Progress Chart">
-<hr>
-<p>My Flashcards<span id="number-of-classes">4</span> classes</p>
-<button id="discover-class-button">Discover</button>
-<button id="make-flashcard-button">Make</button>
-
-</div>
-
-<div id="classes-section">
-<div id="class1">
-    <img src="" alt="">
-    <p>Class 1</p>
-    <progress value="0" max="100"></progress>
-</div>
-<div id="class2">
-    <img src="" alt="">
-    <p>Class 2</p>
-    <progress value="0" max="100"></progress>
-</div>
-<div id="class3">
-    <img src="" alt="">
-    <p>Class 3</p>
-    <progress value="0" max="100"></progress>
-
-</div>
-<button id="new-class">+ New Class</button>
-
-</div>
-
-
-<div id="trending-classes">
-    <p id="trending-header">Trending Certified Classes</p>
-    <div class="trending-class">
-        <img src="" alt="">
-        <p>Trending Class 1</p>
+    <div class="profile">
+      <div class="avatar">R</div>
+      <h2>Hi, Redeat!</h2>
     </div>
-    <div class="trending-class">
-        <img src="" alt="">
-        <p>Trending Class 2</p>
-    </div>
-    <div class="trending-class">
-        <img src="" alt="">
-        <p>Trending Class 3</p>
-    </div>
-    <a href="#" id="see-all-link">See all Certified Classes</a>
-</div>
 
-<div id="bottom-side">
- <img id="logo" src="" alt=""></img>
-    <button>Upgrade</button>
- <img id="mobile" src="" alt=""></img>   
-</div>
-    </aside>
+    <div class="stats">
+      <div class="stat">
+        <span>Days Streak</span>
+        <strong>4</strong>
+      </div>
+      <div class="stat">
+        <span>Studied Today</span>
+        <strong>--</strong>
+      </div>
+      <div class="stat">
+        <span>Avg / Day</span>
+        <strong>--</strong>
+      </div>
+      <i class="fa-solid fa-chart-column"></i>
+    </div>
+  </header>
+
+  <!-- FLASHCARD SECTION (fixed) -->
+  <section class="flashcard-bar">
+    <h3>My Flashcards (4 classes)</h3>
+
+    <div class="actions">
+      <button class="pill">Discover</button>
+      <button class="pill">Make</button>
+    </div>
+  </section>
+
+  <!-- SCROLLABLE DECKS ONLY -->
+  <section class="deck-list">
+    <!-- Decks -->
+  <div class="deck">
+    <img src="https://placekitten.com/60/60" alt="Geography">
+    <div class="deck-info">
+      <p>Geography</p>
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <div class="deck">
+    <div class="deck-icon">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+    <div class="deck-info">
+      <p>Ω Knowledge Rehab Ω <i class="fa-solid fa-circle-check"></i></p>
+      <div class="progress"></div>
+    </div>
+  </div>
+    <div class="deck">...</div>
+    <div class="deck">...</div>
+    <div class="deck">...</div>
+    <div class="deck">...</div>
+    <div class="deck">...</div>
+    <div class="deck">...</div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sidebar-footer">
+    <button class="upgrade">UPGRADE</button>
+    <i class="fa-solid fa-mobile-screen"></i>
+  </footer>
+
+</aside>
 
  <!-- main Section -->
   <main id="main-content">
@@ -124,25 +137,72 @@ Mastery</span></pre>
     </div>
 
     <div id="deck-list">
-        <div class="deck-item">
-    <input type="checkbox" name="deck1" value="deck1">
-    <label for="deck1">deck 1</label>
+  <div class="deck-item">
+
+    <!-- LEFT -->
+    <div class="deck-left">
+      <input type="checkbox" id="deck1">
+      <label for="deck1">Deck 1</label>
+    </div>
+
+    <!-- CENTER -->
     <progress value="0" max="100"></progress>
+
+    <!-- RIGHT ICONS -->
+    <div class="deck-icons">
+      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+    </div>
+
+  </div>
 </div>
 
 
-        <div class="deck-item">
-    <input type="checkbox" name="deck2" value="deck2">
-    <label for="deck2">deck 2</label>
+
+      <div id="deck-list">
+  <div class="deck-item">
+
+    <!-- LEFT -->
+    <div class="deck-left">
+      <input type="checkbox" id="deck2">
+      <label for="deck2">Deck 2</label>
+    </div>
+
+    <!-- CENTER -->
     <progress value="0" max="100"></progress>
+
+    <!-- RIGHT ICONS -->
+    <div class="deck-icons">
+      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+    </div>
+
+  </div>
 </div>
 
 
-        <div class="deck-item">
-    <input type="checkbox" name="deck3" value="deck3">
-    <label for="deck3">deck 3</label>
+
+       <div id="deck-list">
+  <div class="deck-item">
+
+    <!-- LEFT -->
+    <div class="deck-left">
+      <input type="checkbox" id="deck3">
+      <label for="deck3">Deck 3</label>
+    </div>
+
+    <!-- CENTER -->
     <progress value="0" max="100"></progress>
+
+    <!-- RIGHT ICONS -->
+    <div class="deck-icons">
+      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+    </div>
+
+  </div>
 </div>
+
     </div>
   </main>
 
