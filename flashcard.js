@@ -22,7 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 3,
       question: "What is the biosphere?",
       answer: "The zone of life on Earth"
+    },
+
+    {
+      id:4,
+      question:"CSS",
+      answer: "Cascading Style Sheets"
     }
+
+
   ];
 
   /* -------------------------------
@@ -41,6 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const ratingSection = document.getElementById("rating");
   const revealBtn = document.getElementById("revealBtn");
   const progressBar = document.getElementById("progressBar");
+  const cardStudied=document.getElementById("studied-card");
+  const totalCards=document.getElementById("total-cards");
+  // Set total cards count
+  totalCards.textContent=cards.length;
 
   /* -------------------------------
      4. RENDER CARD
@@ -95,6 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     circle.addEventListener("click", () => {
       const rating = Number(circle.dataset.value);
       handleRatingClick(rating);
+      cardStudied.textContent = currentCardIndex + 1;
     });
   });
 
@@ -120,3 +133,21 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCard();
 
 });
+
+const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.tab;
+
+    // deactivate all
+    tabs.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    // activate selected
+    tab.classList.add("active");
+    document.getElementById(target).classList.add("active");
+  });
+});
+

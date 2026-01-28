@@ -81,8 +81,8 @@ Mastery</span></pre>
     <h3>My Flashcards (4 classes)</h3>
 
     <div class="actions">
-      <button class="pill">Discover</button>
-      <button class="pill">Make</button>
+      <button class="pill discover">Discover</button>
+      <button class="pill make">Make</button>
     </div>
   </section>
 
@@ -132,8 +132,15 @@ Mastery</span></pre>
   </div>
         
 
-    <div id="deck selection">
-        <input type="radio" name="deck" value="all" checked>All 
+    <div id="deck-selection">
+
+       <div class="checkall"> <input type="radio" name="deck" value="all" type="all" checked>
+        <label for="all">All</label></div>
+
+        <span class="select-buttons">
+          <button class="progressive">PROGRESSIVE</button>
+          <button class="random">RANDOM</button>
+        </span>
     </div>
 
     <div id="deck-list">
@@ -207,5 +214,6 @@ Mastery</span></pre>
   </main>
 
     </div>
+    <script src="dashboard.js"></script>
 </body>
 </html>

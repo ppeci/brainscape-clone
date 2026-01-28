@@ -226,3 +226,113 @@ body {
 .circle small {
   font-size: 11px;
 }
+
+
+.stats-container {
+  max-width: 360px;
+  margin: 20px auto;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.tab {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px;
+  color: #9fb2c9;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: white;
+  border-bottom: 3px solid #4fc3f7;
+}
+
+/* Content */
+.tab-content {
+  display: none;
+  padding: 20px 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* This Round */
+.dot-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: rgba(255,255,255,.3);
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: white;
+  box-shadow: 0 0 0 6px rgba(255,255,255,.15);
+}
+
+.round-time {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Overall */
+.circle-progress {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 16px solid rgba(255,255,255,.2);
+  border-top-color: #4fc3f7;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-progress h2 {
+  margin: 0;
+}
+
+.rating-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.bar {
+  height: 16px;
+  background: rgba(255,255,255,.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+}
+
+.fill.new { width: 80%; background: #1c2736; }
+.fill.orange { background: orange; }
+.fill.yellow { background: gold; }
+.fill.green { background: #7cb342; }
+
+.cards-rated {
+  text-align: center;
+  margin-top: 20px;
+}
