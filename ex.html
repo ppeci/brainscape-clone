@@ -9,30 +9,35 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <div class="logo"><a href="#">
+            <div class="logo"><a href="ex.html">
                 <img src="icons/5f93252045a23abd2bb2929b16bb400d58ed0787.png" alt="Brainscape">
                 </a>
             </div>
 
             <ul class="menu">
-                <li class="nav-item"><a href="#">Find Flashcards</a></li>
-                <li class="nav-item"><a href="#">Make Flashcards</a></li>
+                <li class="nav-item dropdown"><a href="#" class="dropdown-toggle">Flashcards</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.brainscape.com/learn">Browse Brainscape-certified flashcards</a></li>
+                        <li><a href="https://www.brainscape.com/subjects">Browse all flashcards</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="signup.html">Make Flashcards</a></li>
                 <li class="nav-item dropdown"><a href="#" class="dropdown-toggle">How It Works</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Features Overview</a></li>
+                        <li><a href="HowItWorks.html">Features Overview</a></li>
                         <li><a href="https://www.brainscape.com/academy/cognitive-science-studying/" target="_blank">The Science of Studying</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown"><a href="#" class="dropdown-toggle">Educators</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Schools & Teachers</a></li>
-                        <li><a href="#">Tutors & Resellers</a></li>
+                        <li><a href="educators.html">Schools & Teachers</a></li>
+                        <li><a href="sell-flashcards.html">Tutors & Resellers</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown"><a href="#" class="dropdown-toggle">Businesses</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Employee Training</a></li>
-                        <li><a href="#">Publishers & Resellers</a></li>
+                        <li><a href="business.html">Employee Training</a></li>
+                        <li><a href="HowItWorks.html">Publishers & Resellers</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown"><a href="#" class="dropdown-toggle">Academy</a>
@@ -51,7 +56,55 @@
                 <a href="login.html" class="login">Log in</a>
                 <a href="signup.html" class="signup">Get Started</a>
             </div>
+
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
         </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#">Find Flashcards</a></li>
+                <li><a href="signup.html">Make Flashcards</a></li>
+                <li class="mobile-dropdown">
+                    <span>How It Works</span>
+                    <ul>
+                        <li><a href="HowItWorks.html">Features Overview</a></li>
+                        <li><a href="https://www.brainscape.com/academy/cognitive-science-studying/">The Science of Studying</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <span>Educators</span>
+                    <ul>
+                        <li><a href="business.html">Employee Training</a></li>
+                        <li><a href="sell-flashcards.html">Tutors & Resellers</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <span>Businesses</span>
+                    <ul>
+                        <li><a href="educators.html">Schools & Teachers</a></li>
+                        <li><a href="HowItWorks.html">Publishers & Resellers</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-dropdown">
+                    <span>Academy</span>
+                    <ul>
+                        <li><a href="https://www.brainscape.com/academy/" target="_blank">Academy Homepage</a></li>
+                        <li><a href="https://www.brainscape.com/academy/cognitive-science-studying/" target="_blank">The Science of Studying</a></li>
+                        <li><a href="https://www.brainscape.com/academy/studying/" target="_blank">Study Tips</a></li>
+                        <li><a href="https://www.brainscape.com/academy/teachers/" target="_blank">Teaching Tips</a></li>
+                        <li><a href="https://www.brainscape.com/academy/employee-training/" target="_blank">Employee Training Tips</a></li>
+                        <li><a href="https://www.brainscape.com/academy/languages/" target="_blank">Language Learning Tips</a></li>
+                        <li><a href="https://www.brainscape.com/academy/test-prep/" target="_blank">Test Prep Tips</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="mobile-auth">
+                <a href="login.html" class="login-btn">Log in</a>
+                <a href="signup.html" class="signup-btn">Get Started</a>
+            </div>
+        </div>
     </header>
 
     <section class="hero">
@@ -118,7 +171,7 @@
             <h2>Top Brainscape-certified flashcards</h2>
             <p>Made and vetted by our pannels of experts for hundreds of subjects, exams, languges, and certifications.</p>
             <div class="flashcards-card-grid">
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/spanish" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina.png" alt="Spanish">
                     <div class="card-content">
                         <h3>Spanish</h3>
@@ -129,7 +182,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/personal-development" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina (1).png" alt="Personal Development">
                     <div class="card-content">
                         <h3>Personal Development</h3>
@@ -140,7 +193,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/nremt-paramedic" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina (2).png" alt="NREMT">
                     <div class="card-content">
                         <h3>NREMT® Paramedic</h3>
@@ -151,7 +204,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/vocab-builder" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina (3).png" alt="Vocab Builder">
                     <div class="card-content">
                         <h3>Vocab Builder</h3>
@@ -162,7 +215,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/world-geography" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina (4).png" alt="World Geography">
                     <div class="card-content">
                         <h3>World Geography</h3>
@@ -173,7 +226,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/human-anatomy" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina (5).png" alt="Human Anatomy">
                     <div class="card-content">
                         <h3>Human Anatomy</h3>
@@ -184,7 +237,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card">
+                <a href="https://www.brainscape.com/learn/nclex-rn" class="card">
                     <img src="icons/ios_app_icon_iphone_3x_retina(6).png" alt="NCLEX-RN">
                     <div class="card-content">
                         <h3>NCLEX-RN®</h3>
@@ -195,7 +248,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="card see-all">
+                <a href="https://www.brainscape.com/learn" class="card see-all">
                     <span>> See All </span>
                 </a>
             </div>
@@ -209,24 +262,24 @@
                 Meticulously organized into the Knowledge Genome.</p>
 
             <div class="pill-grid">
-                <a href="#">Entrance Exams</a>
-                <a href="#">Professional Certifications</a>
-                <a href="#">Foreign Languages</a>
-                <a href="#">Science</a>
-                <a href="#">English</a>
-                <a href="#">Humanities & Social Studies</a>
-                <a href="#">Mathematics</a>
-                <a href="#">Medical & Nursing</a>
-                <a href="#">Vocational</a>
-                <a href="#">Law</a>
-                <a href="#">Health & Fitness</a>
-                <a href="#">Business & Finance</a>
-                <a href="#">Technology & Engineering</a>
-                <a href="#">Food & Beverage</a>
-                <a href="#">Fine Arts</a>
-                <a href="#">Random Knowledge</a>
+                <a href="https://www.brainscape.com/subjects/entrance-exams">Entrance Exams</a>
+                <a href="https://www.brainscape.com/subjects/professional-certifications">Professional Certifications</a>
+                <a href="https://www.brainscape.com/subjects/foreign-languages">Foreign Languages</a>
+                <a href="https://www.brainscape.com/subjects/science">Science</a>
+                <a href="https://www.brainscape.com/subjects/english">English</a>
+                <a href="https://www.brainscape.com/subjects/humanities-social-studies">Humanities & Social Studies</a>
+                <a href="https://www.brainscape.com/subjects/mathematics">Mathematics</a>
+                <a href="https://www.brainscape.com/subjects/medical-nursing">Medical & Nursing</a>
+                <a href="https://www.brainscape.com/subjects/vocations">Vocational</a>
+                <a href="https://www.brainscape.com/subjects/law">Law</a>
+                <a href="https://www.brainscape.com/subjects/health-fitness">Health & Fitness</a>
+                <a href="https://www.brainscape.com/subjects/business-finance">Business & Finance</a>
+                <a href="https://www.brainscape.com/subjects/technology-engineering">Technology & Engineering</a>
+                <a href="https://www.brainscape.com/subjects/food-beverage">Food & Beverage</a>
+                <a href="https://www.brainscape.com/subjects/fine-arts">Fine Arts</a>
+                <a href="https://www.brainscape.com/subjects/random-knowledge">Random Knowledge</a>
             </div>
-            <a href="#" class="library-link">Search all flashcards ></a>
+            <a href="https://www.brainscape.com/subjects" class="library-link">Search all flashcards ></a>
         </div>
     </section>
 
@@ -292,7 +345,7 @@
                 <p>Give students or employees secure access, track their progress, and massively improve knowledge retention, all while protecting your proprietary materials.</p>
                 <div class="transform-btn">
                     <a href="educators.html" class="btn primary">Educators</a>
-                    <a href="#" class="btn secondary">Employee Trainers</a>
+                    <a href="business.html" class="btn secondary">Employee Trainers</a>
                 </div>
             </div>
             <div class="transform-image" >
@@ -309,7 +362,7 @@
             <div class="earn-text">
                 <h1>Earn money from your flashcards.</h1>
                 <p>Turn your knowledge into passive income or supplement your existing eLearning solutions with mobile flashcards.</p>
-                    <a href="#" class="btn primary">See How to Earn Money</a>
+                    <a href="sell-flashcards.html" class="btn primary">See How to Earn Money</a>
             </div>
         </div>
     </section>
@@ -425,9 +478,9 @@
             <div class="footer-col">
                 <h3>Key Links</h3>
                 <ul>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Corporate Training</a></li>
-                    <li><a href="#">Teachers & Schools</a></li>
+                    <li><a href="https://www.brainscape.com/pricing?paywall=upgrade">Pricing</a></li>
+                    <li><a href="business.html">Corporate Training</a></li>
+                    <li><a href="educators.html">Teachers & Schools</a></li>
                     <li><a href="https://apps.apple.com/us/app/brainscape-smart-flashcards/id442415567" target="_blank">iOS App</a></li>
                     <li><a href="https://play.google.com/store/apps/details?id=com.brainscape.mobile.portal" target="_blank">Android App</a></li>
                     <li><a href="https://brainscape.zendesk.com/hc/en-us" target="_blank">Help Center</a></li>
@@ -451,8 +504,8 @@
                     <li><a href="https://www.brainscape.com/academy/" target="_blank">Academy</a></li>
                     <li><a href="https://brainscapeshop.myspreadshop.com/all" target="_blank">Swag Shop</a></li>
                     <li><a href="https://brainscape.zendesk.com/hc/en-us/requests/new" target="_blank">Contact</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
                     <li><a href="https://www.brainscape.com/academy/brainscape-podcasts/" target="_blank">Podcasts</a></li>
                     <li><a href="https://brainscape.breezy.hr/" target="_blank">Careers</a></li>
                 </ul>
@@ -481,7 +534,7 @@
             </div>
             <div class="footer-bottom">
                 <p>Brainscape helps you reach your goals faster, through stronger study habits. <br>
-                    &copy; 2026 Bold earning Solutions. <a href="#">Terms and Conditions</a>
+                    &copy; 2026 Bold earning Solutions. <a href="terms.html">Terms and Conditions</a>
                 </p>
             </div>
         </div>
