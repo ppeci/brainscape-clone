@@ -50,7 +50,7 @@ button.active{
   opacity: 0.9;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 790px) {
   body {
     padding: 15px;
   }
