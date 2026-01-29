@@ -38,7 +38,7 @@ a{
   color:#1a73e8;
 }
 
-@media (max-width: 790px) {
+@media screen and (max-width: 790px) {
   body {
     padding: 15px;
   }
