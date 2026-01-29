@@ -157,3 +157,19 @@ if (username) {
 
     // Display first letter in avatar (uppercase)
     document.querySelector('.avatar').textContent = username.charAt(0).toUpperCase();}
+
+   const menuToggle = document.getElementById("menuToggle");
+const sidebar = document.querySelector(".sidebar");
+const overlay = document.getElementById("overlay");
+
+menuToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+// Close sidebar when overlay is clicked
+overlay.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  overlay.classList.remove("active");
+});
+

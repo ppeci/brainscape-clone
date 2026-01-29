@@ -32,14 +32,7 @@ body {
   font-size: 28px;
 }
 
-.avatar1 {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  margin: 16px 0;
-}
-.avatar {
-  width: 60px;
+.avatar {width: 60px;
   height: 60px;
   background: #e8508a;
   border-radius: 50%;
@@ -47,6 +40,13 @@ body {
   place-items: center;
   font-size: 24px;
   margin: 0 auto 8px;
+}
+
+.avatar1 {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 16px 0;
 }
 
 .tabs {
@@ -346,3 +346,119 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #344e6b;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+
+
+@media (max-width: 480px) {
+  .app {
+    grid-template-columns: 1fr; /* stack sidebar above content */
+    height: auto; /* allow scrolling */
+  }
+
+   .hamburger {
+    display: block;
+  }
+
+
+  .sidebar {
+     position: fixed;
+    top: 0;
+    left: -100%; /* hidden off-screen */
+    width: 220px;
+    height: 100%;
+    background: #344e6b;
+    transition: left 0.3s ease;
+    z-index: 1000;
+
+
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .sidebar-top h3 {
+    font-size: 18px;
+  }
+
+  .sidebar.active {
+    left: 0; /* slide in */
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .content {
+    padding: 16px;
+    align-items: stretch; /* full width */
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+  }
+
+  .card-container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .card {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .reveal-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .circles {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .circle small {
+    font-size: 10px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* semi-transparent */
+  display: none; /* hidden by default */
+  z-index: 900; /* just below sidebar */
+}
+
+.overlay.active {
+  display: block;
+}
+

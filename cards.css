@@ -50,3 +50,30 @@ button.active{
   opacity: 0.9;
 }
 
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .card {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 100%; /* full width on mobile */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
