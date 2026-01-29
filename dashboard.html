@@ -55,8 +55,8 @@ Mastery</span></pre>
     </div>-->
 
     <div class="profile">
-      <div class="avatar">R</div>
-      <h2>Hi, Redeat!</h2>
+      <div class="avatar"></div>
+      <h2>Hi, <span id="user-name"></span>!</h2>
     </div>
 
     <div class="stats">
@@ -106,7 +106,7 @@ Mastery</span></pre>
       <div class="progress"></div>
     </div>
   </div>
-    <div class="deck">...</div>
+    <div class="deck"><button id="add-class">+</button>Add new class</button></div>
     <div class="deck">...</div>
     <div class="deck">...</div>
     <div class="deck">...</div>
@@ -128,10 +128,47 @@ Mastery</span></pre>
   <div id="selection-bar">
     <a href="#" id="about-link">About</a>
     <a href="#" id="Deck-link">Decks</a>
-    <a href="#" id="leaderboard-link">Leaderboard</a>
+    <a href="#" id="leaderboard-link">Learner</a>
   </div>
-        
+         <section id="about-view" class="hidden1">
+    <h4 style="color:#2680aa">Headline</h4>
+    <hr>
+    <p>This class was created by Brainscape user Yeab ml.
+       Visit their profile to learn more about the creator.</p>
 
+       <h4 style="color:#2680aa">Description</h4>
+    <hr>
+    <p style="color:gray">No Description</p>
+
+    <h4 style="color:#2680aa">Purpose</h4>
+     <hr>
+    <p>School / University</p>
+
+    <h4 style="color:#2680aa">About Brainscape</h4>
+     <hr>
+    <p>Brainscape is the most efficient way to study adaptive
+       flashcards. Our unique Confidence-Based Repetition method
+        is proven by decades of cognitive science research to 
+        help you learn twice as fast, and to retain knowledge for
+         longer, than studying with traditional methods.</p>
+         <p>You can find adaptive flashcards for thousands of
+           other subjects by searching our market. And if you'd
+            like to make your own flashcards, you can feel free
+             to click the + sign in the left column of your dashboard,
+              and go nuts! Brainscape makes it easy to collaborate with
+               others and/or just to manage your own knowledge in any way
+                you choose.</p>
+         <p>However you choose to use this app, Brainscape hopes to help you Rise to Your Challenge.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mAxlGrrEsYs?si=3Xdp2yTyN3_Elnd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  </section>
+
+
+
+ <section id="deck-view">
+   
     <div id="deck-selection">
 
        <div class="checkall"> <input type="radio" name="deck" value="all" type="all" checked>
@@ -146,71 +183,182 @@ Mastery</span></pre>
     <div id="deck-list">
   <div class="deck-item">
 
-    <!-- LEFT -->
-    <div class="deck-left">
-      <input type="checkbox" id="deck1">
-      <label for="deck1">Deck 1</label>
-    </div>
-
-    <!-- CENTER -->
-    <progress value="0" max="100"></progress>
-
-    <!-- RIGHT ICONS -->
-    <div class="deck-icons">
-      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-    </div>
-
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
   </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">26%</span>
+      <span class="deck-title">Unit 1</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
 </div>
 
 
 
-      <div id="deck-list">
+<div id="deck-list">
   <div class="deck-item">
 
-    <!-- LEFT -->
-    <div class="deck-left">
-      <input type="checkbox" id="deck2">
-      <label for="deck2">Deck 2</label>
-    </div>
-
-    <!-- CENTER -->
-    <progress value="0" max="100"></progress>
-
-    <!-- RIGHT ICONS -->
-    <div class="deck-icons">
-      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-    </div>
-
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
   </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">36%</span>
+      <span class="deck-title">Unit 2</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
 </div>
 
 
 
-       <div id="deck-list">
+     <div id="deck-list">
   <div class="deck-item">
 
-    <!-- LEFT -->
-    <div class="deck-left">
-      <input type="checkbox" id="deck3">
-      <label for="deck3">Deck 3</label>
-    </div>
-
-    <!-- CENTER -->
-    <progress value="0" max="100"></progress>
-
-    <!-- RIGHT ICONS -->
-    <div class="deck-icons">
-      <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-      <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
-    </div>
-
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
   </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">28%</span>
+      <span class="deck-title">Unit 3</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
 </div>
 
+<div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">23%</span>
+      <span class="deck-title">Unit 4</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
     </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+<div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">26%</span>
+      <span class="deck-title">Unit 5</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+
+    </div>
+  </section>
+
+     <section id="leaderboard-view" class="hidden1">
+
+    <div class="leaderboard-header" ">
+      <span>Learner  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Mastery  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Days  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Time  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Cards  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Permission  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+    </div>
+    <hr style="color:lightgray">
+
+    <div class="leaderboard-row">
+      
+     
+      <span>User one&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>9.7%&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>3&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>41.3 mins&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>16 / 22&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Full Study&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      
+    </div>
+
+    
+  </section>
   </main>
 
     </div>

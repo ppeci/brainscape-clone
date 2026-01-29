@@ -1,18 +1,34 @@
 const togglePassword = document.getElementById("togglePassword");
 const passwordInput = document.getElementById("password");
 
-togglePassword.addEventListener("click", () => {
-    passwordInput.type =
-        passwordInput.type === "password" ? "text" : "password";
-});
+if (togglePassword && passwordInput) {
+  togglePassword.addEventListener("click", () => {
+    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+  });
+}
+
 const form = document.getElementById("loginForm");
 
-form.addEventListener("submit", (e) => {
-    const email = form.querySelector('input[type="email"]').value.trim();
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); // prevent default form submission
+
+    const emailInput = document.getElementById('email').value.trim();
     const password = passwordInput.value.trim();
 
-    if (!email || !password) {
-        e.preventDefault(); 
-        alert("Please enter both email and password.");
+    if (!emailInput || !password) {
+      alert("Please enter both email and password.");
+      return;
     }
-});
+
+    // Derive username from email (everything before @)
+    const username = emailInput.split('@')[0];
+
+    // Save to localStorage so other pages (dashboard) can read it
+    localStorage.setItem('username', username);
+
+    // Redirect to dashboard
+    window.location.href = "dashboard.html";
+  });
+}
+

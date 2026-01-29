@@ -1,37 +1,17 @@
-/* ===============================
-   FLASHCARD APP – FULL JS FILE
-   =============================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
   /* -------------------------------
      1. CARD DATA (mock data)
      ------------------------------- */
-  const cards = [
-    {
-      id: 1,
-      question: "Themes of Geography",
-      answer: "Location, place, human-environment interaction, movement, and region"
-    },
-    {
-      id: 2,
-      question: "What is the lithosphere?",
-      answer: "The solid outer layer of the Earth"
-    },
-    {
-      id: 3,
-      question: "What is the biosphere?",
-      answer: "The zone of life on Earth"
-    },
+ const cards = JSON.parse(localStorage.getItem("flashcards")) || [];
 
-    {
-      id:4,
-      question:"CSS",
-      answer: "Cascading Style Sheets"
-    }
+ if(cards.length === 0){
+  alert("No flashcards found. Please create cards first.");
+  window.location.href = "cards.html"; // or your create page
+}
 
-
-  ];
 
   /* -------------------------------
      2. STATE

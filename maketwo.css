@@ -1,0 +1,39 @@
+body{
+  background:#f6f6f6;
+  font-family:Arial;
+}
+
+.box{
+  max-width:350px;
+  margin:100px auto;
+  background:white;
+  padding:40px;
+  text-align:center;
+  border-radius:10px;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin:20px 0;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:#ccc;
+  color:white;
+  border:none;
+  border-radius:6px;
+}
+
+button.active{
+  background:#ff914d;
+}
+
+a{
+  text-decoration:none;
+  color:#1a73e8;
+}
