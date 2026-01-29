@@ -47,7 +47,7 @@ a{
   text-decoration:none;
 }
 
-@media (max-width: 790px) {
+@media screen and(max-width: 790px) {
   body {
     padding: 15px;
   }
@@ -56,10 +56,11 @@ a{
     margin: 20px auto;
     padding: 20px;
     max-width: 100%; /* full width on mobile */
+    border-radius: 0; /* flush edges for mobile */
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
   }
 
@@ -70,6 +71,10 @@ a{
 
   button {
     padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  a {
     font-size: 0.9rem;
   }
 }
