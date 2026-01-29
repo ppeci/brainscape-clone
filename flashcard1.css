@@ -357,7 +357,7 @@ body {
 
 
 
-@media (max-width: 790px) {
+@media screen and screen and screen and screen and (max-width: 790px) {
   .app {
     grid-template-columns: 1fr; /* stack sidebar above content */
     height: auto; /* allow scrolling */
