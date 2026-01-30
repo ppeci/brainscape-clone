@@ -59,3 +59,8 @@ form.addEventListener("submit", (e) => {
     form.submit();
 });
 
+const createbtn = document.querySelector(".create");
+
+createbtn.addEventListener("click", function(){
+     window.location.href = "dashboard.html";
+})
